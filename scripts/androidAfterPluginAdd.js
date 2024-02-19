@@ -54,7 +54,7 @@ module.exports = function(context) {
 
         s = s.replace(new RegExp('</resources>', "i"), '<string name="google_api_key">' + jsonContents.client[0].api_key[0].current_key + '</string>\n</resources>')
 
-        fs.writeFileSync("platforms/android/app/src/main/res/values/strings.xml", s);
+        //fs.writeFileSync("platforms/android/app/src/main/res/values/strings.xml", s);
       } catch (err) {
         process.stdout.write(err);
       }
